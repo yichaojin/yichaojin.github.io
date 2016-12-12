@@ -1,168 +1,114 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
+<!-- DW6 -->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>yulian yao's personal website</title>
+<link rel="stylesheet" href="emx_nav_left.css" type="text/css">
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
 
-  <!-- This is the website title, CHANGE HERE -->
-  <title>Resume</title>
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+  this.numberofmenuitems = 7;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
 
-  <!-- adding styles, notice the file path --> 
-  <link href='font.css' type='text/css'>
-  <link href="main_resume.css" rel="stylesheet" >
-  <meta name="description" content="A resume template for GAU member.">
-  <link rel="canonical" href="//">
-  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
 
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<link href="CSS/colors6.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #0000FF}
+-->
+</style>
 </head>
-  <body class="theme-default">
-    <div class="wrapper">
-      <header class="page-header">
-        <!-- Here is your photo, if you don't want the phote, delete the following line. CHANGE HERE-->
-        <!-- <img src="photo.jpg" alt="my photo" class="avatar"> -->
-        <!-- Here is your name. CHANGE HERE -->
-        <h1 class="header-name">Alex(Yichao Jin)</h1>
-        
-      </header>
-       <p class="footer-line">Mobile: 86-13818724258        </p> Email:Yichaojin0@gmail.com
-       <p class="footer-line">Add:Lane 1058, Xinlong Road,  Minhang District, Shanghai, China(201101)</p>
-      
-      <!-- begin Education -->
-      <section class="content-section">
+<body onmousemove="closesubnav(event);"> 
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+<!-- end masthead --> 
+<div id="pagecell1"> 
+  <!--pagecell1--> 
+  <div id="pageName"> 
+    <h2>Welcome</h2> 
+  </div> 
+  <div id="pageNav"> 
+    <div id="sectionLinks">    
+	<a href="http://yulianyao.github.io">Home</a>
+	<a href="research.html">Research</a> 
+    <a href="publications.html">Publications</a> 
+	<a href="resume.html" target="_blank">Resume</a> 
+	<a href="activities.html">Activities</a>
 
-        <header class="section-header">
-          <h2>Education Background</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Donghua University</h3>
-          <h4 class="resume-item-details">2012 &mdash; 2016  &bull; Applied Physics(Major) | Department of   Physics | Faculty of Science</h4>
-          <p class="resume-item-copy">Ranking: 10/35 GPA: 3.2</p>
-          <p class="resume-item-copy">Field of Study(Major):Electromagnetics, Computer & Networks Techniques, Geometry and Several-variable Calculus, Electric Technology</p>
-          <h4 class="resume-item-details">2013 &mdash; 2016 &bull;International Economics & Trade(Minor) | Glorious Sun School of Business and Management          </h4>
-          
-        </div>
-      </section>
-      <!-- end Education -->
-      
-      
-       <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Portable Air Conditioner </h3>
-          <h4 class="resume-item-details">2013 The Third Faculty of Science "Challenge Cup" Competition        &bull; Jan, 2013 &mdash; Dec, 2013</h4>
-          <h4 class="resume-item-details">Project Principal with CNY600 funds</h4>
-          <p class="resume-item-copy">We utilized the special semiconductor material to produce cooling air.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">The Measurement of Plasma Parameters by Coupling Coil Impedance</h3>
-          <h4 class="resume-item-details">2014 The Donghua University Students Innovation Project &bull; Jan, 2015 &mdash; Dec, 2015</h4>
-          <h4 class="resume-item-details">Project Principal with CNY5000 funds</h4>
-          <p class="resume-item-copy">We created a formula between the equivalent impedance of the coil which was measured by the Vector Network Analyzer and the parameters of the APPJ, including electron density and  temperature</p>
-        </div>
-      </section>
-      <!-- end Projects -->
-      
-       <!-- begin Skills -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-        <div class="resume-item">
-          <h4 class="resume-item-details">Language ability</h4>
-          <ul class="resume-item-list">
-            <li>IELTS 6.5</li>
-            <li>Mandarin Test Level 2 Rank B</li>
-          </ul>
-          <p class="resume-item-copy">Fluent in written and spoken English</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Computer ability</h4>
-          <ul class="resume-item-list">
-            <li>Familiar with COMSOL</li>
-            <li>Familiar with Agile system</li>
-            <li>Basic programming skills</li>
-            <li>Proficiency in Word, Excel, PPT and other MS Office software</li>
-          </ul>
-          
-        </div>
-
-        
-      </section>
-      <!-- end Skills -->
-      
-      <!-- begin Recognition -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Recognition</h2>
-        </header>
-        <div class="resume-item">
-          <h3 class="resume-item-title">DongHua University Physics Competition</h3>
-          <h4 class="resume-item-details">The Third-class Reward &bull; 2013</h4>
-          <p class="resume-item-copy">Got the chance to take part in The Shanghai College Students Physics Competition.</p>
-        </div>
+	</div> 
+  </div> 
+<div id="content"> 
+    <div class="feature"> 
+      <h3>My Journey With Nanos</h3>
 
        
-        
-      </section>
-      <!-- end Recognition -->
+    <table width="60%" cellpadding="0" cellspacing="0" summary=""> 
+        <tr valign="top">
+      <td width="97%" height="140" class="storyLeft">
+            <h1>
+              Nano materials, which build a bridge between unpredictable atoms and predictable excellent properties, never stop challenging the limits set by bulk materials. The first time I experienced this property of nano materials was when I learned about quantum dots. Fascinated by their excellent luminescent property, I decided to further explore the possibilities and challenge the limits by applying to be a phd student, and I do believe this passion can make myself a better person and make my life more colorful, just like quantum dots! </h1></td>
+      <td width="3%" class="storyLeft">&nbsp;</td>
+    </tr>
+    </table>
+<table width="100%" cellpadding="0" cellspacing="0" summary=""> 
+        <tr valign="top">
+      <td width="60%" class="storyLeft"><p>
+       <img src="quantumdots.jpg" width="600" height="380" alt=""/>
+      </p>
+        <p>colorful fluorescent nano crystals</p></td>
+      <td width="40%" class="storyLeft">&nbsp;</td>
+    </tr>
+    </table>
+    
 
-      <!-- begin Experience -->
-      <section class="content-section">
-        <header class="section-header">
-          <!-- Here writes the section title. CHANGE HERE -->
-          <h2>Experience</h2>
-        </header>
-
-        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
-        <div class="resume-item">
-          <!-- Here writes the subsection title, CHANGE HERE -->
-          <h3 class="resume-item-title">Campus work</h3>
-          <h4 class="resume-item-details">Information investigator of Yiban Development Department &bull; June，2014 &mdash; Sept，2014</h4>
-          <ul class="resume-item-list">
-            <li>Improve the convenience of clients's interactive experience</li>
-            <li>Process the feedback report of customers</li>
-            <li>assume responsibility for the collection of students and teachers' advice</li>
-          </ul>
-          
-
-        </div><!-- end of resume-item -->
-
-        <!-- another resume item -->
-        <div class="resume-item">
-          <h3 class="resume-item-title">Internship experience</h3>
-          <h4 class="resume-item-details">QA Intern in Haemonetics Corporation &bull; June，2015 &mdash; Sept，2015</h4>
-          <ul class="resume-item-list">
-            <li>Upload the investigation file to the appropriate complaints in Agile system, and upload the C-charts accordingly.</li>
-            <li>Coordinate the return of products samples.</li>
-            <li>Active completion of other temporary work assigned by manager.</li>
-          </ul>
-
-        </div><!-- end of resume-item -->
-
-      </section>
-      <!-- end Experience -->
-      
-      
-      <footer class="page-footer">
-        <p class="footer-line">Lane 1058, Xinlong Road, Block 23, Room 202
-</p>
-       <p class="footer-line">Shanghai 201101
-</p>
-       <p class="footer-line">86-13818724258
-Yichaojin0@gmail.com</p>
-      </footer>
-
-    </div>
-
-  </body>
-
+<!--end pagecell1--> 
+<br> 
+<script type="text/javascript">
+<!--
+var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+swfobject.registerObject("FLVPlayer");
+//-->
+</script>
+</body>
 </html>
