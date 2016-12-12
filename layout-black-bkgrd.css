@@ -1,0 +1,256 @@
+/* These are the controls for the layout of the pages */
+
+body {
+	text-align: center;
+	background: #0099FF;
+	color: #0099FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/* Hidden Layers for Accessibility Fallback */
+
+.invisilink		{ 
+	visibility: hidden; 
+	display: none;
+}
+a.invisilink		{ 
+	visibility: hidden; 
+	display: none;
+}
+
+/* this holds the random info above
+   the black header */
+#misccontainer {
+	width: 760px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: right;
+	color: #000000;
+}
+#misccontainer a:link  { 
+	color: #000000;
+	background-color: transparent; }
+#misccontainer a:visited  { 
+	color: #000000;
+	background-color: transparent; }
+#misccontainer a:hover  { 
+	color: #eeb211;
+	background-color: transparent; }
+#misccontainer a:active  { 
+	color: #000000;
+	background-color: transparent; }	
+/* just want to be able to align left the CoE text */
+#coecontainer {
+	text-align: left;
+	float: left;
+	font-size: 11px;
+	padding-top: 8px;
+}
+.top-links {
+	font-size: 11px;
+	line-height: 5px;
+}
+.breadcrumbs {
+	font-size: 10px;
+	/*padding-top: 5px;*/
+	line-height: 13px;
+}
+
+
+#presentationcontainer {
+	background: #FFFFFF;
+	color: #0099FF;
+	width: 760px;
+	clear: both;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+}
+
+/* black header */
+#headerscontainer {
+	width: 760px;
+	height: 70px;
+	background: #0099FF url(gt-header.gif) no-repeat;
+	color: #FFFFFF;
+	display: block;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
+#headergtimage {
+	width: 125px;
+	height: 55px;
+	float: left;
+	text-align: left;
+	position: relative;
+}
+#headerece {
+	width: 635px;
+	height: 55px;
+	float: right;
+	text-align: right;
+	position: relative;
+}
+#headerece a:link { 
+	color: #000000; 
+	background-color: transparent;
+	text-decoration: none; }
+#headerece a:visited { 
+	color: #000000; 
+	background-color: transparent;
+	text-decoration: none; }
+#headerece a:active { 
+	color: #000000; 
+	background-color: transparent;
+	text-decoration: underline; }
+#headerece a:hover { 
+	color: #000000; 
+	background-color: transparent;
+	text-decoration: underline; }
+.header-ece-text {
+	color: #FFFFFF;
+	background-color: transparent;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 20px;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+.header-research-group {
+	color: #FFFFFF;
+	background-color: #0099FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	height: 24px;
+	padding-right: 15px;
+	padding-top: 8px;
+}
+
+/* main part of page between header and footer */
+#contentcontainer {
+	width: 730px;
+	clear: both;
+	padding-bottom: 10px;
+	padding-top: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0px;
+	display: block;
+	text-align: left;
+}
+
+/* main content */
+#content {
+	width: 730px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	white-space: normal;
+	text-indent: 0;
+	color: #000;
+}
+.fineprint {
+	text-align: center;
+	font-size: 9px;
+}
+
+#content a:link  { 
+	color: #333;
+	background-color: transparent; }
+#content a:visited  { 
+	color: #333;
+	background-color: transparent; }
+#content a:hover  { 
+	color: #eeb211;
+	background-color: transparent; }
+#content a:active  {
+	color: #FFF;
+	background-color: transparent;
+}	
+
+#content H1 {
+	font-size: large;
+	font-weight: bold;
+	margin-top: 0px;
+}
+
+#content H2 {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#content H3 {
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 2px;
+}
+
+#content H4 {
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 4px;
+}
+
+#content H5 {
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 6px;
+}
+
+#content li {
+  margin-left: -20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* footer */
+#footer {
+	background: #0099FF;
+	color: #000000;
+	text-align: center;
+	font-size: 10px;
+	width: 760px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	display: block;
+	position: relative;
+	background-color: #FFAA33;
+}
+
+#footer a:link { 
+	color: #000000; 
+	background-color: transparent;
+	text-decoration: none; }
+#footer a:visited { 
+	color: #000000; 
+	background-color: transparent;
+	text-decoration: none; }
+#footer a:active { 
+	color: #000000; 
+	background-color: transparent;
+	text-decoration: underline; }
+#footer a:hover { 
+	color: #F7CD2A; 
+	background-color: transparent;
+	text-decoration: underline; }
+bar {
+	font-size: xx-large;
+}
